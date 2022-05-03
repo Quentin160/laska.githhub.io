@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Fruktur&display=swap");
+
+* {
+  font-family: "Fruktur", cursive;
+  font-size: 40px;
+  color: #bb0a1e;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(111, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
+  background-repeat: no-repeat;
+}
+
+#game-canvas {
+  background-color: black;
+  display: none;
+  height: 100vh;
+}
+
+#start-btn,
+#restart-btn,
+#play-again-btn {
+  background-color: #bb0a1e;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  margin: 20px 0px;
+  border: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#gameover-screen {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#winning-screen {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#welcome-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+h1 {
+  margin: 0;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+#scoreh2 {
+  display: none;
+  margin: 0;
+}
+
+#arrow-img {
+  width: 150px;
+  margin: 0px 5px;
+}
