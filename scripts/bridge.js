@@ -1,6 +1,6 @@
 class GlassPane {
   constructor(xPos, yPos) {
-    //Glass pane image or Rect square
+    
     this.image = new Image();
     this.image.src = "./images/glasspane.png";
     this.width = 100;
