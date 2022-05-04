@@ -95,7 +95,7 @@ class Game {
         }
         break;
     }
-  }; // TODO - add animations
+  }; 
 
   winning = () => {
     playWinningSound();
@@ -113,17 +113,17 @@ class Game {
     gameoverScreen.style.display = "flex";
     backgroundMusic.pause();
     gameoverMusic.play();
-  }; // TODO - add animations
+  }; 
 
   gameLoop = () => {
-    // * 1. CLEAR THE CANVAS
+    
     paintbrush.clearRect(0, 0, canvas.width, canvas.height);
 
-    // * 2. MOVEMENT AND CHANGES ON ELEMENTS
+    
     this.spawnInitialPanes();
     scoreText.innerText = this.score;
 
-    // * 3. DRAWING THE ELEMENTS
+    
     this.drawPlatform();
     this.paneArr.forEach((panePair) => {
       panePair.forEach((pane) => pane.drawPane());
@@ -132,11 +132,11 @@ class Game {
     this.livesText();
     this.heartsArr.forEach((heart) => heart.drawHearts());
 
-    // * 4. REQUEST ANIMATION FRAME AND GAME LOGIC CHANGES
+    
     if (!this.isGameOver) {
       requestAnimationFrame(this.gameLoop);
     }
   };
 }
 
-// TODO - level 2 feature
+
